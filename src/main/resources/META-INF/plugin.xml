@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.horse.react-class-style-to-css</id>
+    <name>React-class-style-to-css</name>
+    <vendor>tim.sheung</vendor>
+
+    <description>
+        This is a plugin for transforming the react class style into equivalent css.
+    </description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Horse.TransformToCSS"
+                class="TransformToCSS"
+                text="Copy the Equivalent CSS"
+                description="Transform the React class style to CSS"
+        >
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
